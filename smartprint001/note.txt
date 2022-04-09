@@ -1,0 +1,19 @@
+                                            <?php
+                                            $ambilsemuadatastock = mysqli_query($conn,"select * from stock");
+                                            while ($data = mysqli_fetch_array($ambilsemuadatastockambil)) {
+                                                $i = 1;
+                                                $namabarang = $data['namabarang'];
+                                                $deskripsi = $data['deskripsi'];
+                                                $width = $data['width'];
+                                                $height = $data['height'];
+                                                $qty = $data['quantity'];
+                                            }
+                                            ?>
+                                            <tr>
+                                                <td><?$i++?></td>
+                                                <td><?$namabarang?></td>
+                                                <td><?$deskripsi?></td>
+                                                <td><?$width?></td>
+                                                <td><?$height?></td>
+                                                <td><?$qty?></td>
+                                            </tr>
